@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation section -->
+    <header class="navbar">
+      <h1 class="navbar-title"><a href="index.html">Arth Verma</a></h1>
+      <nav class="navbar-links">
+        <a href="index.html" class="navbar-link-home">
+          Home
+          <span class="navbar-link-home-underline"></span>
+        </a>
+        <a class="navbar-link-portfolio">Portfolio</a>
+        <a class="navbar-link-resume">Resume</a>
+      </nav>
+      <button class="navbar-button"><b>Contact Me</b></button>
+    </header>
+
+    <!-- Main content -->
+
+    <section class="contact-section">
+      <div class="contact-content">
+        <!-- Left Column  -->
+        <div class="column-left">
+          <!-- Title and content  -->
+          <div class="intro-text">
+            <div class="intro-header">
+              <h1 class="intro-title">
+                Get <span class="title-span">in Touch.</span>
+              </h1>
+              <p class="intro-description">So that we can talk more about...</p>
+            </div>
+            <!-- Contact Details  -->
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-card">
+                  <div class="email-container">
+                    <img
+                      src="/assets/images/msg.svg"
+                      alt="Email logo"
+                      class="email-logo"
+                    />
+                  </div>
+                  <div class="email-info">
+                    <p class="email-title">Email</p>
+                    <p class="email-address">someone@example.com</p>
+                  </div>
+                </div>
+                <div class="phone-container">
+                  <div class="phone-icon">
+                    <img
+                      src="/assets/images/call.svg"
+                      alt="Phone logo"
+                      class="phone-logo"
+                    />
+                  </div>
+                  <div class="phone-info">
+                    <p class="phone-title">Phone</p>
+                    <p class="phone-number">+1(000)000-0000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="address-section">
+                <div class="address-container">
+                  <div class="address-card">
+                    <div class="address-icon-box">
+                      <img
+                        src="/assets/images/home.svg"
+                        alt="Address logo"
+                        class="address-logo"
+                      />
+                    </div>
+                    <div class="address-details">
+                      <p class="address-title">Address</p>
+                      <p class="address-desc">
+                        Stephen E.Quinlan Building,<br />70 The Pond Rd, North
+                        York,<br />ON M3J 3M6
+                      </p>
+                    </div>
+                  </div>
+                  <div class="socials-container">
+                    <div class="socials-icon-box">
+                      <img
+                        src="/assets/images/social.svg"
+                        alt="Socials logo"
+                        class="socials-logo"
+                      />
+                    </div>
+                    <p class="socials-title">Socials</p>
+                    <div class="socials-icons">
+                      <img
+                        src="/assets/images/Social icons/Mail.svg"
+                        alt="Social icon 1"
+                        class="social-icon"
+                      />
+                      <img
+                        src="/assets/images/Social icons/LinkedIn.svg"
+                        alt="Social icon 2"
+                        class="social-icon"
+                      />
+                      <img
+                        src="/assets/images/Social icons/Call.svg"
+                        alt="Social icon 3"
+                        class="social-icon"
+                      />
+                      <img
+                        src="/assets/images/Social icons/Whatsapp.svg"
+                        alt="Social icon 4"
+                        class="social-icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column  -->
+        <form class="message-section" action="" method="post">
+          <div class="message-form">
+            <div class="name">
+              <div class="fname">
+                <label class="message-email-label">First Name</label>
+                <input
+                  class="message-input"
+                  id="fnameInput"
+                  type="text"
+                  id="emailInput"
+                  placeholder="Enter First Name"
+                />
+              </div>
+              <div class="lName">
+                <label class="message-email-label">Last Name</label>
+                <input
+                  class="message-input"
+                  type="text"
+                  id="emailInput"
+                  placeholder="Enter Last Name"
+                />
+              </div>
+            </div>
+            <div class="message-content">
+              <label for="emailInput" class="message-email-label">Email</label>
+              <input
+                class="message-input"
+                type="email"
+                id="emailInput"
+                placeholder="someone@example.com"
+                aria-label="Enter your email"
+              />
+            </div>
+            <label for="message" class="message-label">Message</label>
+            <textarea
+              class="message-input"
+              id="message-input-text"
+              rows="10"
+              placeholder="Enter your message here!"
+              aria-label="Enter your message"
+            ></textarea>
+            <button class="submit-button" type="submit" id="submitButton">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <footer class="contact-footer">
+        Made with ❣️ by <strong>Arth Verma</strong>
+      </footer>
+    </section>
+
+    <div id="confirmation">
+      <p id="confirmationText">Submit button and validation working!!!!</p>
+    </div>
+
+    <!-- Enter Audio -->
+    <audio src="/assets/audio/enter.mp3" id="audio1"></audio>
+    <audio src="/assets/audio/exit.mp3" id="audio2"></audio>
+    <!-- JS Script  -->
+    <script src="/js/main.js"></script>
+    <script src="/js/Validation.js"></script>
+  </body>
+</html>
