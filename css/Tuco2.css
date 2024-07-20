@@ -628,6 +628,17 @@ a{
   }
 }
 
+  .social-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 48px;
+  }
+
+  .social-icon:hover{
+    scale: 1.3;
+  }
+
 /* My works section starts */
 .past-works {
   display: flex;
