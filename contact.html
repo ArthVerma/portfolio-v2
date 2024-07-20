@@ -121,46 +121,51 @@
           </div>
         </div>
         <!-- Right Column  -->
-        <form class="message-section" action="" method="post">
+        <form class="myForm" action="" method="post">
           <div class="message-form">
             <div class="name">
               <div class="fname">
                 <label class="message-email-label">First Name</label>
+                <p id="error-message">This field cannot be empty!</p>
                 <input
                   class="message-input"
                   id="fnameInput"
                   type="text"
                   id="emailInput"
-                  placeholder="Enter First Name"
+                  placeholder="Enter First Name" required
                 />
+                
               </div>
               <div class="lName">
                 <label class="message-email-label">Last Name</label>
+                <p id="error-message">This field cannot be empty!</p>
                 <input
                   class="message-input"
                   type="text"
                   id="emailInput"
-                  placeholder="Enter Last Name"
+                  placeholder="Enter Last Name" required
                 />
               </div>
             </div>
             <div class="message-content">
               <label for="emailInput" class="message-email-label">Email</label>
+              <p id="error-message">This field cannot be empty!</p>
               <input
                 class="message-input"
                 type="email"
                 id="emailInput"
                 placeholder="someone@example.com"
-                aria-label="Enter your email"
+                aria-label="Enter your email" required
               />
             </div>
             <label for="message" class="message-label">Message</label>
+            <p id="error-message">This field cannot be empty!</p>
             <textarea
               class="message-input"
               id="message-input-text"
               rows="10"
               placeholder="Enter your message here!"
-              aria-label="Enter your message"
+              aria-label="Enter your message" required
             ></textarea>
             <button class="submit-button" type="submit" id="submitButton">Send</button>
           </div>
