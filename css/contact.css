@@ -746,10 +746,10 @@
   }
 
   /* NextSibling element  */
-  .labelOnFocus{
+  /* .labelOnFocus{
     font-weight: bold;
     color: #FFA688;
-  }
+  } */
 
   #confirmation{
     font-family: Poppins, sans-serif;
@@ -783,4 +783,13 @@
     background-color: brown;  
     color: white;
     font-family: Poppins, sans-serif;
+  }
+
+
+  /* This is for error message  */
+  #error-message {
+    color: rgb(225, 119, 119);
+    font-size: 0.8rem;  
+    display: none;  
+    line-height: 0px;
   }
