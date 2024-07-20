@@ -179,4 +179,53 @@ formInputs.forEach(thisInput => {
 
 
 
-// Animation using JS
+// Error message
+
+// const form = document.getElementById('myForm');
+// const inputs = form.querySelectorAll('input[required]');  // Get all required inputs
+
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();  // Prevent default form submission
+
+//   inputs.forEach(input => {
+//     const errorMessage = input.nextElementSibling;  // Get the error message span
+//     errorMessage.classList.remove('active');  // Clear any previous errors
+
+//     if (input.value.trim() === '') {
+//       errorMessage.textContent = 'This field is required.';
+//       errorMessage.classList.add('active');  // Show the error message
+//     }
+//   });
+// })
+
+
+formInputs.forEach( thisError => {
+    thisError.addEventListener("blur", function(){
+        if (thisError.value === ""){
+            thisError.previousElementSibling.style.display = "block";
+        } else {
+            thisError.previousElementSibling.style.display = "none";
+        }
+    })
+})
+
+submitButton.addEventListener("click", function(e){
+    e.preventDefault();
+
+    if(
+        formInputs[0].value !== "" &&
+        formInputs[1].value !== "" &&
+        formInputs[2].value !== "" &&
+        formInputs[3].value !== "" 
+    ){ 
+    console.log("Show popup message");
+    } else {
+        if(thisError.value === ""){
+                thisError.previousElementSibling.style.display = "block";
+            } else {
+                thisError.previousElementSibling.style.display = "none";
+            }
+        }
+
+    }
+)
